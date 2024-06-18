@@ -1,6 +1,6 @@
 # Machine Learning Steps
 
-This is my guide and perspective on creating Machine Learning models~~for beginners~~ in Python.  
+This is my guide and perspective on creating Machine Learning models ~~for beginners~~ in Python.  
 
 ## Python Libraries
 ### NumPy
