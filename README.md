@@ -74,14 +74,17 @@ Scikit-learn is a huge library with a big active community. So I highly recommen
 
 ## Model Training - Spliting data  
 Here you should split your data into training and testing sets, then train your model on the training data.    
+
 **X**: X will be all the values in your dataset except the target variable you want to predict.    
 **y**: y will be your target variable.    
 `X = df.drop(['Goal'], axis=1)`  
 `y = train_df['Goal']`  
+
 After that, you can split them using train-test-split:    
 `from sklearn.model_selection import train_test_split`  
 `X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)`  
 `test_size=0.2` means that you are using 20% of the data for testing. This means  `0<test_size<1`. You can change and try it however you want.    
+
 *Note*: If test data is already available, maybe you don't need to split your data. You can use this test data as `X_test = test_df`, where you would predict `y_test`.  
 
 ## Model Training
